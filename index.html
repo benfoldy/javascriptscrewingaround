@@ -2,106 +2,42 @@
 <html>
 
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Break Points Exercise</title>
 
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
-    <style>
-      h1 {
-        font-size: 120px;
-        font-family: 'Abril Fatface', cursive;
-        text-align: center;
-        color: 0E400A;
-      }
-
-      p {
-        font-size: 40px;
-        font-family: 'Abril Fatface', cursive;
-        text-align: center;
-        color: 0E400A;
-      }
-
-      #square {
-        width: 580px;
-        height: 580px;
-        background: red;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-
-      @media (max-width:600px) {
-
-        h1 {
-          font-size: 80px;
-          line-height: 80px;
-
-        }
-        p {
-          font-size: 28px;
-        }
-
-        #square {
-          width: 380px;
-          height: 380px;
-        }
-      }
-
-      @media (max-width:380px) {
-
-        h1 {
-          font-size: 40px;
-          line-height: 40px;
-        }
-
-        p {
-          font-size: 14px;
-
-        }
-        #square {
-          width: 300px;
-          height: 300px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
   </head>
 
   <body>
+    <div id="maincontent">
+      <h1>Exercise</h1>
 
-    <h1>Breakpoint Exercise</h1>
+      <button id="mybutton">HEY BUTTON</button>
 
-    <button id="mybutton">HEY BUTTON</button>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+        sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+        Vivamus elementum semper nisi.
+      </p>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-      sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
-      Vivamus elementum semper nisi.
-    </p>
+      <div id="square">
+      </div>
 
-    <div id="square">
+      <p>
+        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+        Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
+        pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
+        sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+      </p>
+
     </div>
 
-    <p>
-      Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-      Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus
-      pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales
-      sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-    </p>
-
-    <script>
-      $(document).ready(function() {
-        $("p").css("color", "green");
-        $("#mybutton").click(function() {
-          $("p").toggle();
-          $("#square").hover(function() {
-            alert("This is a big red square!");
-          })
-        });
-      });
+    <script src="script.js">
     </script>
   </body>

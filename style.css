@@ -18,15 +18,15 @@ html, body {
 }
 
 h1 {
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 40px;
+  line-height: 40px;
   font-family: 'Abril Fatface', cursive;
   text-align: center;
   color: 0E400A;
 }
 
 p {
-  font-size: 14px;
+  font-size: 20px;
   font-family: 'Abril Fatface', cursive;
   text-align: center;
   color: 0E400A;
@@ -50,26 +50,20 @@ p {
 
 @media(min-width: 681px) {
   /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-}
-
-h1 {
-  font-size: 80px;
-  line-height: 80px;
-}
-
-p {
-  font-size: 28px;
-}
-
-#square {
-  width: 380px;
-  height: 380px;
-}
-
-#maincontent {
-  max-width: 600px;
-}
-
+  h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  p {
+    font-size: 28px;
+  }
+  #square {
+    width: 380px;
+    height: 380px;
+  }
+  #maincontent {
+    max-width: 600px;
+  }
 }
 
 @media(min-width: 729px) {
@@ -87,3 +81,4 @@ p {
   #maincontent {
     max-width: 700px;
   }
+}
